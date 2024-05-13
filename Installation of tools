@@ -1,0 +1,49 @@
+Installation of tools in Kali for Bug Hunting
+
+#to get into root privilege
+sudo su 
+
+#update and upgrade
+apt update
+apt upgrade
+
+apt install gccgo-go 
+apt install golang-go
+--> Add export PATH=$PATH:/usr/local/go/bin, where assumed /usr/local/go/bin is the default dir for go binary.
+
+source ~/.zashrc
+
+# Install packages
+echo "Installing packages..."
+go install github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+nuclei -ut
+go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+go install github.com/tomnomnom/waybackurls@latest
+go install github.com/tomnomnom/httprobe@latest
+go install github.com/projectdiscovery/httpx/cmd/httpx@latest
+go install github.com/tomnomnom/assetfinder@latest
+go install github.com/tomnomnom/gf@lates
+go install github.com/tomnomnom/anew@latest
+go install github.com/d3mondev/puredns/v2@latest
+go install github.com/003random/getJS@latest
+go install -v github.com/lukasikic/subzy@latest
+go install github.com/projectdiscovery/dnsprobe@latest
+go install github.com/hakluke/hakcheckurl@latest
+go install github.com/lc/gau/v2/cmd/gau@latest
+sudo apt-get install -y python3-pip
+
+#incase of Ubuntu
+sudo apt install python3
+go install github.com/ffuf/ffuf@latest
+go install github.com/OWASP/Amass/v3/...@master
+
+#Wordlist
+wget https://github.com/six2dez/OneListForAll/blob/main/onelistforallmicro.txt
+wget https://github.com/six2dez/OneListForAll/blob/main/onelistforallshort.txt
+
+#configuration
+git clone https://github.com/1ndianl33t/Gf-Patterns
+mkdir .gf
+mv ~/Gf-Patterns/*.json ~/.gf
+
