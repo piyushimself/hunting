@@ -9,9 +9,11 @@ apt upgrade
 
 apt install gccgo-go 
 apt install golang-go
---> Add export PATH=$PATH:/usr/local/go/bin, where assumed /usr/local/go/bin is the default dir for go binary.
 
-source ~/.zashrc
+gedit ~./zshrc
+--> Add export PATH=$PATH:~./go/bin, where assumed ~./go/bin is the default dir for go binary.
+
+source ~/.zshrc
 
 # Install packages
 echo "Installing packages..."
