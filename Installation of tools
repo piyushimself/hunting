@@ -29,7 +29,7 @@ go install github.com/tomnomnom/gf@lates
 go install github.com/tomnomnom/anew@latest
 go install github.com/d3mondev/puredns/v2@latest
 go install github.com/003random/getJS@latest
-go install -v github.com/lukasikic/subzy@latest
+go install github.com/lukasikic/subzy@latest
 go install github.com/projectdiscovery/dnsprobe@latest
 go install github.com/hakluke/hakcheckurl@latest
 go install github.com/lc/gau/v2/cmd/gau@latest
